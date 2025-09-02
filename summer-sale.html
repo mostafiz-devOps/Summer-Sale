@@ -62,9 +62,9 @@
       <!-- Featured Products -->
       <section>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="col-span-4 md:col-span-2 w-[1068px]">
+          <div class="col-span-4 md:col-span-2 w-[1200px]">
             <div>
-              <h1>Kitchenware</h1>
+              <h1 class="text-xl font-semibold ml-4">Kitchenware</h1>
               <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div class="card bg-base-100 w-64 shadow-lg">
                   <figure class="px-10 pt-10">
@@ -76,8 +76,8 @@
                   </figure>
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
-                    <p>K. Accessories</p>
-                    <p>39.00 TK</p>
+                    <h3>Cooker</h3>
+                    <p>25.00 TK</p>
                   </div>
                 </div>
                 <div class="card bg-base-100 w-64 shadow-lg">
@@ -90,8 +90,8 @@
                   </figure>
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
-                    <p>K. Accessories</p>
-                    <p>39.00 TK</p>
+                    <h3>Crokeries</h3>
+                    <p>61.00 TK</p>
                   </div>
                 </div>
                 <div class="card bg-base-100 w-64 shadow-lg">
@@ -104,14 +104,14 @@
                   </figure>
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
-                    <p>K. Accessories</p>
-                    <p>39.00 TK</p>
+                    <h3>Pressure cooker</h3>
+                    <p>18.00 TK</p>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <h1>Sportsware</h1>
+              <h1 class="text-xl font-semibold ml-4">Sportsware</h1>
               <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div class="card bg-base-100 w-64 shadow-lg">
                   <figure class="px-10 pt-10">
@@ -123,7 +123,7 @@
                   </figure>
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
-                    <p>Sports Back Cap</p>
+                    <h3>Sports Cap</h3>
                     <p>39.00 TK</p>
                   </div>
                 </div>
@@ -137,7 +137,7 @@
                   </figure>
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
-                    <p>Full Jersey Set</p>
+                    <h3>Full Jersey Set</h3>
                     <p>65.00 TK</p>
                   </div>
                 </div>
@@ -151,14 +151,14 @@
                   </figure>
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
-                    <p>Sports Cates</p>
+                    <h3>Sports Cates</h3>
                     <p>45.00 TK</p>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <h1>Furniture</h1>
+              <h1 class="text-xl font-semibold ml-4">Furniture</h1>
               <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div class="card bg-base-100 w-64 shadow-lg">
                   <figure class="px-10 pt-10">
@@ -170,7 +170,7 @@
                   </figure>
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
-                    <p>Single Relax Chair</p>
+                    <h3>Single Relax Chair</h3>
                     <p>85.00 TK</p>
                   </div>
                 </div>
@@ -184,7 +184,7 @@
                   </figure>
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
-                    <p>Children Chair</p>
+                    <h3>Children Chair</h3>
                     <p>30.00 TK</p>
                   </div>
                 </div>
@@ -198,18 +198,16 @@
                   </figure>
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
-                    <p>Flexible Sofa</p>
+                    <h3>Flexible Sofa</h3>
                     <p>75.00 TK</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-span-1  mt-7"
-          >
-            <div class="w-[250px] h-[120px] bg-base-100 shadow-lg p-4 mb-4">
-              <h3>Have coupon?</h3>
+          <div class="col-span-1 mt-7">
+            <div class="flex flex-col shadow-lg p-4 mb-4">
+              <h class="font-bold">Have coupon <span class="text-red-500">?</span></h>
               <div class="join">
                 <div>
                   <label class="input validator join-item">
@@ -237,16 +235,16 @@
                     Enter valid coupon code
                   </div>
                 </div>
-                <button class="btn bg-[#E527B2] join-item">Apply</button>
+                <button class="btn bg-[#E527B2] rounded-lg join-item">Apply</button>
               </div>
             </div>
-            <div class="w-[250px] h-[200px] bg-base-100 shadow-lg p-4">
-              <ol>
-                <li>Cooker</li>
-                <li>Relax Chair</li>
-                <li>Children Chair</li>
-                <li>Flexible Sofa</li>
-              </ol>
+            <div class="text-sm shadow-lg mt-7 p-4">
+              <h class="font-bold">Order Summary</h>
+              <div id="order-summary"></div>
+              <hr>
+              <p class="mt-4">Total: 239.00 TK</p>
+              <p>Discount: 1012</p>
+              <p class="font-semibold">Final Price: 215.10 TK</p>
               <button class="btn w-full bg-[#E527B2]">Wide</button>
             </div>
           </div>
