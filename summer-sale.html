@@ -72,7 +72,7 @@
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
                     <h3>Cooker</h3>
-                    <p>25.00 TK</p>
+                    <h4>1200.00 TK</h4>
                   </div>
                 </div>
                 <div class="card bg-base-100 w-64 shadow-lg">
@@ -86,7 +86,7 @@
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
                     <h3>Crokeries</h3>
-                    <p>61.00 TK</p>
+                    <h4>1300.00 TK</h4>
                   </div>
                 </div>
                 <div class="card bg-base-100 w-64 shadow-lg">
@@ -100,7 +100,7 @@
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
                     <h3>Pressure cooker</h3>
-                    <p>18.00 TK</p>
+                    <h4>1000.00 TK</h4>
                   </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
                     <h3>Sports Cap</h3>
-                    <p>39.00 TK</p>
+                    <h4>40.00 TK</h4>
                   </div>
                 </div>
                 <div class="card bg-base-100 w-64 shadow-lg">
@@ -133,7 +133,7 @@
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
                     <h3>Full Jersey Set</h3>
-                    <p>65.00 TK</p>
+                    <h4>70.00 TK</h4>
                   </div>
                 </div>
                 <div class="card bg-base-100 w-64 shadow-lg">
@@ -147,7 +147,7 @@
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
                     <h3>Sports Cates</h3>
-                    <p>45.00 TK</p>
+                    <h4>60.00 TK</h4>
                   </div>
                 </div>
               </div>
@@ -166,7 +166,7 @@
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
                     <h3>Single Relax Chair</h3>
-                    <p>85.00 TK</p>
+                    <h4>800.00 TK</h4>
                   </div>
                 </div>
                 <div class="card bg-base-100 w-64 shadow-lg">
@@ -180,7 +180,7 @@
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
                     <h3>Children Chair</h3>
-                    <p>30.00 TK</p>
+                    <h4>700.00 TK</h4>
                   </div>
                 </div>
                 <div class="card bg-base-100 w-64 shadow-lg">
@@ -194,7 +194,7 @@
                   <div class="card-body items-center text-center">
                     <img src="images/Group 14.png" alt="" />
                     <h3>Flexible Sofa</h3>
-                    <p>75.00 TK</p>
+                    <h4>900.00 TK</h4>
                   </div>
                 </div>
               </div>
@@ -202,44 +202,27 @@
           </div>
           <div class="col-span-1 mt-7">
             <div class="flex flex-col shadow-lg p-4 mb-4">
-              <h class="font-bold">Have coupon <span class="text-red-500">?</span></h>
+              <h class="font-bold"
+                >Have coupon <span class="text-red-500">?</span></h
+              >
               <div class="join">
-                <div>
-                  <label class="input validator join-item">
-                    <svg
-                      class="h-[1em] opacity-50"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                    >
-                      <g
-                        stroke-linejoin="round"
-                        stroke-linecap="round"
-                        stroke-width="2.5"
-                        fill="none"
-                        stroke="currentColor"
-                      >
-                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                        <path
-                          d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
-                        ></path>
-                      </g>
-                    </svg>
-                    <input type="text" placeholder="Coupon code" required />
-                  </label>
-                  <div class="validator-hint hidden">
-                    Enter valid coupon code
-                  </div>
-                </div>
-                <button class="btn bg-[#E527B2] rounded-lg join-item">Apply</button>
+                <input
+                  class="input input-bordered join-item w-full"
+                  placeholder="Enter coupon code"
+                  id="coupon-code"
+                />
+                <button class="btn join-item bg-[#E527B2]" id="apply-coupon">
+                  Apply
+                </button>
               </div>
             </div>
             <div class="text-sm shadow-lg mt-7 p-4">
               <h class="font-bold">Order Summary</h>
               <div id="order-summary"></div>
-              <hr>
-              <p class="mt-4">Total: 239.00 TK</p>
-              <p>Discount: 1012</p>
-              <p class="font-semibold">Final Price: 215.10 TK</p>
+              <hr />
+              <p class="mt-4">Total: <span id="total-price">0</span></p>
+              <p>Discount: <span>0</span></p>
+              <p class="font-semibold">Final Price: <span>0</span></p>
               <button class="btn w-full bg-[#E527B2]">Wide</button>
             </div>
           </div>
